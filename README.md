@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 **Computer Vision Engineer | Autonomous Systems | 3D Perception**
 
 📍 Germany | 🚗 Autonomous Driving | 🧠 Computer Vision  
-🔗 [LinkedIn](https://www.linkedin.com) | 🔗 [GitHub](https://github.com/srmamt00)
+🔗 [LinkedIn](https://www.linkedin.com) | 🔗 [GitHub](https://github.com/sriz99)
 
 ---
 
