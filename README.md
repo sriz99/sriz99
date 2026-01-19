@@ -17,8 +17,10 @@ Here are some ideas to get you started:
 # Sri Harish Madampur Suresh  
 **Computer Vision & Perception Engineer | Autonomous Driving | 3D Scene Understanding**
 
-📍 Germany | 🚗 Autonomous Driving | 🧠 Computer Vision  
+📍 Stuttgart, Germany | 🚗 Autonomous Driving | 🧠 Computer Vision  
 🔗 [LinkedIn](https://www.linkedin.com/in/sri-harish-m-s-1772521b1) | 🔗 [GitHub](https://github.com/sriz99)
+
+📫 **Contact:** sriharish52@outlook.com
 
 ---
 
@@ -76,6 +78,8 @@ This project implements a real-time camera-based localization and tracking syste
 
 ## 🚗 KITTI-Based Object Detection for Road Safety
 
+![KITTI Streamlit Screenshot](assets/KITTI_streamlit.png) 
+
 This project demonstrates end-to-end computer vision solutions for road safety applications, implementing a complete object detection system using the KITTI Vision Benchmark Suite and YOLOv8 architecture. A full machine learning pipeline has been developed from data preparation to model deployment, leveraging Python, Streamlit, OpenCV, and Ultralytics YOLO to create an interactive web application that performs real-time inference on both images and videos. The system features a user-friendly Streamlit interface that enables users to upload media files and receive instant object detection results with bounding boxes, confidence scores, and class labels for cars, pedestrians, and cyclists . The model's performance has been validated through comprehensive evaluation using metrics like mAP, precision, and recall, ensuring robust detection capabilities across diverse road scenarios. The production-ready implementation includes proper dependency management, clear setup instructions, and deployment considerations, demonstrating capability to deliver scalable machine learning solutions. Visual results showcase the system's effectiveness with annotated outputs displaying accurate object localization and classification, making complex computer vision technology accessible and practical for real-world autonomous driving applications
 
 **Tech:** YOLOv8 · KITTI Dataset · PyTorch · Computer Vision · Model Evaluation
@@ -119,4 +123,4 @@ Linux · Git · Docker · Streamlit · ChromaDB
 
 ---
 
-📫 **Contact:** sriharish52@outlook.com
+
