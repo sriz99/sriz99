@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 # Sri Harish Madampur Suresh  
 **Computer Vision & Perception Engineer | Autonomous Driving | 3D Scene Understanding**
 
-📍 Stuttgart, Germany | 🚗 Autonomous Driving | 🧠 Computer Vision  
+📍 Germany | 🚗 Autonomous Driving | 🧠 Computer Vision  
 🔗 [LinkedIn](https://www.linkedin.com/in/sri-harish-m-s-1772521b1) | 🔗 [GitHub](https://github.com/sriz99)
 
 📫 **Contact:** sriharish52@outlook.com
@@ -26,51 +26,67 @@ Here are some ideas to get you started:
 
 ## 🧠 About Me
 
-Autonomous Systems Engineer specializing in **computer vision and 3D scene understanding for autonomous driving**, based Germany. Recent **M.Eng. graduate in Automotive Systems from Hochschule Esslingen** with hands-on experience at **Daimler Truck AG (Master Thesis: Ground Truth Generation for Voxel-Based 3D Occupancy Prediction using Multi-LiDAR Truck Data)** and **Institute for Intelligent Systems**. Developed perception pipelines including VLM optimization for traffic light/sign recognition (+15% accuracy in CARLA), camera-based localization/tracking, and KITTI YOLOv8 detection system. Good Knowledge in Python, PyTorch, Numpy, Pandas, Docker, and CARLA; experience in model training, dataset curation, and geometry-aware perception for scalable AD pipelines. Committed to advancing perception algorithms, real-time autonomous systems, and robust AI solutions for intelligent mobility applications. Seeking **Computer Vision / Perception Engineer** roles to advance autonomous vehicle technologies.
+Autonomous Systems Engineer specializing in **computer vision and 3D scene understanding for autonomous driving**, based in Germany. Recent **M.Eng. graduate in Automotive Systems from Hochschule Esslingen** with hands-on experience at **Daimler Truck AG (Master Thesis: Ground Truth Generation for Voxel-Based 3D Occupancy Prediction using Multi-LiDAR Truck Data)** and **Institute for Intelligent Systems**. Developed perception pipelines including VLM optimization for traffic light/sign recognition (+15% accuracy in CARLA), camera-based localization/tracking, and KITTI YOLOv8 detection system. Good Knowledge in Python, PyTorch, Numpy, Pandas, Docker, and CARLA; experience in model training, dataset curation, and geometry-aware perception for scalable AD pipelines. Committed to advancing perception algorithms, real-time autonomous systems, and robust AI solutions for intelligent mobility applications. Seeking **Computer Vision / Perception Engineer** roles to advance autonomous vehicle technologies.
 
 ---
 ## ⭐ Project Highlights
 
-- 🚛 **3D Occupancy Ground Truth Pipeline** – Multi-LiDAR fusion and voxel-based label generation for autonomous trucks (−80% manual labeling effort)
-- 🚦 **VLM-Enhanced Traffic Light & Sign Recognition** – +15% driving score improvement in CARLA
-- 🎯 **Vision-Based Localization & Tracking** – Real-time camera-based positioning with EKF
-- 🤖 **RAG-Powered QA System** – End-to-end GenAI application with LangChain and Gemini
+🚛 **3D Occupancy Ground Truth Pipeline** – Multi-LiDAR fusion and voxel-based label generation for autonomous trucks (≈80% reduction in manual labeling effort)
+
+🚦 **VLM-Enhanced Traffic Light & Sign Recognition** – +15% driving score improvement in CARLA through robust perception integration
+
+🎯 **Vision-Based Localization & Tracking** – Real-time camera-based positioning and tracking using EKF
+
+🤖 **RAG-Powered QA System** – End-to-end GenAI application using LangChain and Google Gemini
+
 ---
 
 ## 🛠️ Featured Projects 
+
 ### 🚛 Ground Truth Generation Pipeline for 3D Occupancy Prediction in Trucks
 
-This project involved designing and implementing an automated pipeline to generate dense 3D semantic occupancy Ground Truth labels for autonomous heavy-duty vehicles, addressing the scarcity of labeled training data.
+This project involved designing and implementing an automated pipeline to generate **dense 3D semantic occupancy ground truth labels** for autonomous heavy-duty vehicles, addressing the scarcity and high cost of labeled training data.
 
-![3D Occupancy Screenshot](assets/3D_Occupancy.png)
+<p align="center">
+  <img src="assets/3D_Occupancy.png" />
+</p>
 
-The  workflow included implementing multi-LiDAR sensor fusion to aggregate sparse sensor data into a unified 360-degree point cloud representation, adapting deep learning architectures to perform semantic segmentation on outdoor LiDAR scenes, and developing logic to rigorously separate static background elements from dynamic foreground objects to ensure temporal consistency and prevent motion artifacts. To tackle data sparsity, the pipeline utilized  Reconstruction methods to transform sparse point clouds into dense, watertight meshes, followed by voxelization processes to convert into discrete 3D occupancy grids. 
+The workflow included **multi-LiDAR sensor fusion** to aggregate sparse sensor data into a unified 360-degree point cloud representation, followed by **deep learning–based semantic segmentation** of outdoor LiDAR scenes. To ensure temporal consistency and prevent motion artifacts, logic was developed to rigorously separate **static background elements** from **dynamic foreground objects**.
 
-The project required managing complex coordinate system transformations to align multi-frame data and validating the automated output against manually annotated ground truth using Intersection-over-Union (mIoU) metrics to ensure label quality for training vision-based perception networks.
+To address data sparsity, the pipeline employed **reconstruction techniques** to transform sparse point clouds into dense, watertight meshes, followed by **voxelization** to generate discrete 3D occupancy grids. The system required careful management of **coordinate system transformations** to align multi-frame data. Automated outputs were validated against manually annotated ground truth using **Intersection-over-Union (mIoU)** metrics to ensure label quality for training vision-based perception networks.
 
 
-**Tech:** Python · PyTorch · multi-LiDAR fusion · Point Cloud Segmentation · Voxel Grids · Docker · Linux · Git
+**Tech:** Python · PyTorch · Multi-LiDAR fusion · Point Cloud Segmentation · Voxel Grids · Docker · Linux · Git
 
 ---
 
 ## 🚦 Vision-Language Model Optimization for Autonomous Driving  
-This project focuses on enhancing the safety and compliance of Large Language Model (LLM)-based autonomous driving systems by developing a robust perception stack within the CARLA simulation environment. Addressing the critical issue of high infraction rates in end-to-end driving agents, a modular Traffic Light and Sign Recognition (TLSR) framework has been designed to integrate seamlessly with LMDrive. The system utilizes state-of-the-art YOLO11 object detection model, which has been fine-tuned specifically on CARLA datasets to ensure high-precision recognition of traffic signals and signs. To handle complex road scenarios, a 'Relevance Prediction' algorithm has been developed that dynamically identifies the specific traffic light governing the ego vehicle's lane, effectively filtering out irrelevant signals. 
+
+This project focuses on enhancing the safety and rule compliance of **Large Language Model (LLM)-based autonomous driving systems** by developing a robust perception stack within the **CARLA simulation environment**. To address high infraction rates observed in end-to-end driving agents, a modular **Traffic Light and Sign Recognition (TLSR)** framework was designed to integrate seamlessly with LMDrive.
 
 <p align="center">
   <img src="assets/traffic_light.png" width="45%" />
   <img src="assets/traffic_sign.png" width="45%" />
 </p>
 
-Additionally, a 'State Validation' module was implemented using temporal consistency checks to mitigate false positives and stabilize detection outputs over consecutive frames. The final perception data is translated into natural language instructions, enabling the frozen LLM to make context-aware driving decisions without requiring extensive model retraining. Extensive evaluation using the LangAuto benchmark demonstrated that this architecture significantly reduces red light violations and improves overall driving scores compared to baseline methods. This work highlights the potential of combining traditional computer vision techniques with Generative AI to create more reliable and rule-compliant autonomous vehicles.
+The system utilizes a state-of-the-art **YOLO11-based object detection model**, fine-tuned specifically on CARLA datasets to achieve high-precision recognition of traffic signals and signs. To handle complex road scenarios, a **Relevance Prediction** algorithm dynamically identifies the traffic light governing the ego vehicle’s lane, effectively filtering out irrelevant signals.
+
+Additionally, a **State Validation module** based on temporal consistency checks was implemented to reduce false positives and stabilize detection outputs across consecutive frames. The final perception output is translated into natural language instructions, enabling a frozen LLM to make context-aware driving decisions without extensive retraining. Evaluation using the **LangAuto benchmark** demonstrated a significant reduction in red-light violations and improved overall driving scores compared to baseline approaches.
 
 **Tech:** PyTorch · Vision-Language Models · CARLA · Computer Vision
 
 ---
 ## 🎯 Camera-Based Localization & Object Tracking
 
-![Camera based localization Screenshot](assets/camera_based.png) 
+This project implements a real-time **camera-based localization and tracking system** designed to function as an indoor GPS for a **1:14 scaled autonomous traffic environment**. A ceiling-mounted IP camera captures bird’s-eye view footage, which is processed using MATLAB for image acquisition and data stream management.
 
-This project implements a real-time camera-based localization and tracking system designed to function as an indoor GPS for a 1:14 scaled autonomous traffic environment,. Utilizing a ceiling-mounted IP camera, the system captures bird’s-eye view footage which is processed using MATLAB to handle image acquisition and data stream management. A critical phase of the project involved rigorous camera calibration using checkerboard patterns to correct lens distortion and accurately transform 2D pixel coordinates into 3D world coordinates. For robust object identification, the system evolved from traditional machine learning (ACF) to a high-performance Deep Learning approach using YOLOv4, optimized via transfer learning to detect vehicles with high precision. Custom ground truth datasets were meticulously prepared using MATLAB’s Video Labeler to fine-tune the detection models. To ensure smooth trajectory estimation, an Extended Kalman Filter (EKF) was integrated to track the vehicle's position, velocity, and heading angle, effectively handling non-linear motion dynamics and measurement noise,. The final system successfully demonstrates the fusion of computer vision and state estimation algorithms to provide reliable navigation data for autonomous driving research  
+<p align="center">
+  <img src="assets/camera_based.png" />
+</p>
+
+A critical phase involved **rigorous camera calibration** using checkerboard patterns to correct lens distortion and accurately map 2D pixel coordinates to 3D world coordinates. For robust object identification, the system evolved from traditional machine learning methods (ACF) to a deep learning–based approach using **YOLOv4**, optimized through transfer learning.
+
+Custom ground truth datasets were prepared using **MATLAB Video Labeler**, and an **Extended Kalman Filter (EKF)** was integrated to estimate vehicle position, velocity, and heading angle while handling non-linear motion dynamics and measurement noise. The final system demonstrates the effective fusion of computer vision and state estimation techniques for reliable autonomous navigation research. 
 
 **Tech:** MATLAB Computer Vision and Deep Learning Toolbox · YOLO · Real-Time Vision
 
@@ -78,22 +94,34 @@ This project implements a real-time camera-based localization and tracking syste
 
 ## 🚗 KITTI-Based Object Detection for Road Safety
 
-![KITTI Streamlit Screenshot](assets/KITTI_streamlit.png) 
+This project demonstrates an end-to-end computer vision solution for road safety applications using the **KITTI Vision Benchmark Suite** and a **YOLOv8-based object detection architecture**. A complete machine learning pipeline was developed, covering data preparation, model training, evaluation, and deployment.
 
-This project demonstrates end-to-end computer vision solutions for road safety applications, implementing a complete object detection system using the KITTI Vision Benchmark Suite and YOLOv8 architecture. A full machine learning pipeline has been developed from data preparation to model deployment, leveraging Python, Streamlit, OpenCV, and Ultralytics YOLO to create an interactive web application that performs real-time inference on both images and videos. The system features a user-friendly Streamlit interface that enables users to upload media files and receive instant object detection results with bounding boxes, confidence scores, and class labels for cars, pedestrians, and cyclists . The model's performance has been validated through comprehensive evaluation using metrics like mAP, precision, and recall, ensuring robust detection capabilities across diverse road scenarios. The production-ready implementation includes proper dependency management, clear setup instructions, and deployment considerations, demonstrating capability to deliver scalable machine learning solutions. Visual results showcase the system's effectiveness with annotated outputs displaying accurate object localization and classification, making complex computer vision technology accessible and practical for real-world autonomous driving applications
+<p align="center">
+  <img src="assets/KITTI_streamlit.png" />
+</p>
+
+The system includes an interactive **Streamlit-based web application** that enables real-time inference on images and videos. Users can upload media files and receive detection outputs with bounding boxes, confidence scores, and class labels for vehicles, pedestrians, and cyclists. Model performance was evaluated using **mAP, precision, and recall**, demonstrating reliable detection across diverse road scenarios.
+
+The project emphasizes production-ready development practices, including dependency management, clear setup documentation, and deployment considerations, making advanced computer vision technology accessible for real-world autonomous driving applications.
 
 **Tech:** YOLOv8 · KITTI Dataset · PyTorch · Computer Vision · Model Evaluation
 
 ---
+
 ## 🤖 RAG-Powered Webpage QA Chatbot with Gemini
+
+This project demonstrates an end-to-end **Retrieval-Augmented Generation (RAG)** system for webpage-based question answering using modern AI technologies. The application is built with **Streamlit** for the web interface, **LangChain** for RAG orchestration, **Google Gemini** for embedding generation and LLM-based response synthesis, and **ChromaDB** for efficient vector storage and similarity search.
 
 ![RAG Chatbot Screenshot](assets/rag_chat.png) 
 
-This RAG-powered webpage chatbot demonstrates building end-to-end AI applications using modern technologies including Streamlit for the web interface, LangChain for RAG orchestration, Google Gemini for embeddings and LLM capabilities, and ChromaDB for efficient vector storage. The project  implements a clean three-tier architecture with modular backend design, separating concerns into specialized modules for configuration, document loading, embedding generation, and RAG chain construction . Solution to real-world challenges including webpage content extraction using WebBaseLoader, intelligent text chunking with RecursiveCharacterTextSplitter for optimal retrieval, and context-aware question answering through a sophisticated RAG pipeline that processes user queries by retrieving relevant document chunks and generating concise, accurate responses. The Streamlit based web application features a professional chat-style interface with conversation history management, proper session state handling, and comprehensive deployment documentation that demonstrates production-ready development practices
+The system follows a clean **three-tier modular architecture**, separating concerns into dedicated components for configuration management, document loading, embedding generation, and RAG chain construction. Key challenges addressed include **robust webpage content extraction** using LangChain’s `WebBaseLoader`, **intelligent text chunking** with `RecursiveCharacterTextSplitter` to preserve semantic context, and **context-aware question answering** through a well-structured retrieval pipeline.
 
-**Tech:** LLMs · RAG · LangChain · Google Gemini · ChromaDB · Streamlit · Vector Databases · Prompt Engineering
+User queries are processed by retrieving the most relevant document chunks from the vector database and generating concise, accurate responses conditioned on both the retrieved context and the query. The Streamlit-based application features a **professional chat-style interface** with conversation history management, proper session state handling, and clear user interaction flows. Comprehensive documentation and deployment instructions were included to demonstrate **production-ready development practices**.
+
+**Tech:** Python · LLMs · RAG · LangChain · Google Gemini · ChromaDB · Streamlit · Vector Databases · Prompt Engineering
 
 ---
+
 
 ## 🧰 Skills
 
