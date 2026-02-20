@@ -13,7 +13,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+-->+
 # Sri Harish Madampur Suresh  
 **Computer Vision & Perception Engineer | Autonomous Driving | 3D Scene Understanding**
 
@@ -26,7 +26,15 @@ Here are some ideas to get you started:
 
 ## 🧠 About Me
 
-Autonomous Systems Engineer specializing in **computer vision and 3D scene understanding for autonomous driving**, based in Germany. Recent **M.Eng. graduate in Automotive Systems from Hochschule Esslingen** with hands-on experience at **Daimler Truck AG (Master Thesis: Ground Truth Generation for Voxel-Based 3D Occupancy Prediction using Multi-LiDAR Truck Data)** and **Institute for Intelligent Systems**. Developed perception pipelines including VLM optimization for traffic light/sign recognition (+15% accuracy in CARLA), camera-based localization/tracking, and KITTI YOLOv8 detection system. Good Knowledge in Python, PyTorch, Numpy, Pandas, Docker, and CARLA; experience in model training, dataset curation, and geometry-aware perception for scalable AD pipelines. Committed to advancing perception algorithms, real-time autonomous systems, and robust AI solutions for intelligent mobility applications. Seeking **Computer Vision / Perception Engineer** roles to advance autonomous vehicle technologies.
+Autonomous Systems Engineer focused on **computer vision and 3D scene understanding for intelligent mobility**.
+
+I recently completed my **M.Eng. in Automotive Systems at Hochschule Esslingen**, where I worked on perception and geometry-aware modeling for autonomous driving. During my **Master’s thesis at Daimler Truck AG**, I developed a ground-truth generation pipeline for voxel-based 3D occupancy prediction using multi-LiDAR truck data, enabling scalable 3D scene representation for perception models.
+
+My work spans **camera-based localization and tracking, visual-inertial SLAM, and object detection (YOLOv8 on KITTI)**. I also explored Vision-Language Model optimization for traffic light and sign recognition, achieving a **15%** improvement in CARLA simulations.
+
+I enjoy building structured ML pipelines—from dataset curation and representation design to model training and evaluation—using Python and PyTorch. My interests lie in robust 3D perception, multi-sensor fusion, and real-time AI systems for autonomous platforms.
+
+Currently exploring opportunities in **Computer Vision and Perception Engineering** to advance scalable and reliable autonomous systems.
 
 ---
 ## ⭐ Project Highlights
